@@ -2,8 +2,8 @@
 
 define( 'MAYUKI_VERSION', wp_get_theme()->get( 'Version' ) );
 
-if (! function_exists('mayuki_init' ) ) :
-	function mayuki_init() {
+if (! function_exists('mayuki_theme_setup' ) ) :
+	function mayuki_theme_setup() {
 		add_theme_support( 'automatic-feed-links' );
 
 		// Add support for responsive embedded content.
@@ -19,6 +19,6 @@ if (! function_exists('mayuki_init' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 	}
-	add_action( 'after_setup_theme', 'mayuki_init' );
+	add_action( 'after_setup_theme', 'mayuki_theme_setup' );
 
 endif;
