@@ -1,0 +1,32 @@
+/**
+ * For the navigation pattern, we want maximum flexibility, but strong defaults.
+ * Therefore, the primary navigation group block (mayuki-navigation) will
+ * pull theme custom props. Putting them on container allows easy override
+ * with higher specificity on individual blocks.
+ *
+ * Using grid to control individual sections so we can add more later
+ * without dependency on columns.
+ *
+ * As of 08/22/2021, navigation block appears to have no built in hover / is-active effects.
+ *
+ * @since 1.0.0
+ */
+
+.mayuki-navigation {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 0.5fr));
+    grid-auto-flow: column;
+    font-family:    var(--wp--custom--fonts--heading);
+    background:     var(--wp--preset--color--white);
+    color:          var(--wp--custom--color--primary);
+    border-bottom: 1px solid var(--wp--custom--color--primary);
+}
+
+.mayuki-navigation nav {
+    grid-column: auto / span 4;
+}
+
+.mayuki-navigation .wp-block-navigation__container {
+    flex-wrap: nowrap;
+}

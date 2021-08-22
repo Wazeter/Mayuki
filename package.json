@@ -1,6 +1,22 @@
 {
-  "scripts": {
-	"wp-env": "wp-env"
-  }
+ "name": "mayuki",
+ "version": "1.0.0",
+ "description": "Block theme for WordPress using minimal functions",
+ "author": "Frank Wazeter",
+ "license": "GPL-2.0-or-later",
+ "homepage": "https://mayuki.io",
+ "devDependencies": {
+  "gulp": "^4.0.2",
+  "gulp-postcss": "^9.0.0",
+  "postcss": "^8.3.6",
+  "cssnano": "^5.0.8",
+  "postcss-calc": "^7.0.1",
+  "postcss-import": "^12.0.1",
+  "postcss-partial-import": "^4.1.0",
+  "postcss-preset-env": "^6.7.0",
+  "postcss-reporter": "^6.0.1"
+ },
+ "scripts": {
+  "wp-env": "wp-env"
+ }
 }
-

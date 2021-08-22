@@ -7,6 +7,12 @@
  * @package mayuki
  * @since 1.0.0
  */
+
+/**
+ *  Explicitly defining the header rendering that block templates pull
+ *  doing so here so that we do not have to create a separate header.php or footer.php specifically
+ *  for this functionality.
+ */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
