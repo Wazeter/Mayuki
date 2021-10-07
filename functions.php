@@ -21,6 +21,12 @@ if (! function_exists('mayuki_theme_setup' ) ) :
 		// Featured image
 		add_theme_support( 'post-thumbnails' );
 
+		// Widgets Block Editor
+		add_theme_support( 'widgets-block-editor' );
+
+		// Widgets
+		add_theme_support( 'widgets' );
+
 	}
 	add_action( 'after_setup_theme', 'mayuki_theme_setup' );
 
@@ -36,7 +42,15 @@ function mayuki_styles() {
 		'mayuki-global',
 		get_theme_file_uri( 'assets/css/global.css' ),
 		'',
-		MAYUKI_VERSION
+		MAYUKI_VERSION,
+		'screen and (min-width: 601px)'
+	);
+	wp_enqueue_style(
+		'mayuki-mobile',
+		get_theme_file_uri( 'assets/css/mobile.css' ),
+		'',
+		MAYUKI_VERSION,
+		'screen and (max-width: 600px)'
 	);
 }
 add_action( 'wp_enqueue_scripts', 'mayuki_styles' );

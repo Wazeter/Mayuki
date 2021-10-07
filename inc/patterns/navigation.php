@@ -14,16 +14,18 @@
  */
 
 $content = '
-	<!-- wp:group {"align":"full","className":"mayuki-navigation"} -->
-	<div class="wp-block-group alignfull mayuki-navigation">
-		<!-- wp:site-logo {"width":60} /-->	
-		<!-- wp:navigation {"orientation":"horizontal","isResponsive":true,"itemsJustification":"right","align":"wide"} -->
-			<!-- wp:navigation-link /-->
-			<!-- wp:navigation-link /-->
-			<!-- wp:navigation-link /-->
-		<!-- /wp:navigation -->
-	</div>
-	<!-- /wp:group -->';
+					<!-- wp:group {"align":"full","className":"mayuki-nav-grid-wrapper"} -->
+						<div class="wp-block-group alignfull mayuki-nav-grid-wrapper">
+							<!-- wp:site-logo {"width":120} /-->
+							<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center"} /-->
+							<!-- wp:navigation {"itemsJustification":"right","align":"wide"} -->
+								<!-- wp:navigation-link {"isTopLevelLink":true} /-->
+								<!-- wp:navigation-link {"isTopLevelLink":true} /-->
+								<!-- wp:navigation-link {"isTopLevelLink":true} /-->
+							<!-- /wp:navigation -->
+						</div>
+					<!-- /wp:group -->
+				';
 
 
 

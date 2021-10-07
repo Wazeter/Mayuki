@@ -30,3 +30,35 @@
 .mayuki-navigation .wp-block-navigation__container {
     flex-wrap: nowrap;
 }
+
+.mayuki-nav-wrapper {
+    display: grid;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    gap: 0.5rem;
+    grid-template-columns: clamp(2.5rem, 2.5vw, 4.375rem) auto max-content;
+    grid-template-areas: "logo menu search";
+    font-family: var(--wp--custom--fonts--heading);
+    background: var(--wp--custom--color--primary);
+    color: var(--wp--preset--color--white);
+}
+
+.mayuki-nav-wrapper .wp-block-site-logo {
+    grid-area: logo;
+    height: 4.375rem;
+    object-fit: cover;
+    width: auto;
+
+}
+
+.mayuki-nav-wrapper .wp-block-navigation {
+    grid-area: menu;
+    background-color: red;
+    place-self: center;
+    height: 4.375rem;
+}
+
+.mayuki-nav-wrapper .wp-block-navigation-item {
+    background-color: black;
+}
+

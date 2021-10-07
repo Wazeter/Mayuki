@@ -4,7 +4,7 @@ var cssnano = require('cssnano');
 var calc = require('postcss-calc');
 var cssImport = require('postcss-import');
 var partialImport = require('postcss-partial-import');
-import postcssPresetEnv from 'postcss-preset-env';
+/* import postcssPresetEnv from 'postcss-preset-env'; */
 var reporter = require('postcss-reporter');
 
 
