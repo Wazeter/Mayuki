@@ -33,6 +33,22 @@ if (! function_exists('mayuki_theme_setup' ) ) :
 endif;
 
 /**
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width Content width.
+ * @since 1.0.0
+ * @access public
+ */
+function mayuki_content_width() {
+	// This variable is intended to be overruled from themes.
+	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+	$GLOBALS['content_width'] = apply_filters( 'mayuki_content_width', 672 );
+}
+
+/**
  * Enqueue the style.css file.
  *
  * @since 1.0.0

@@ -46,8 +46,8 @@
 }
 
 .mayuki-nav .current-menu-item {
-    background-color: var(--wp--custom--color--secondary) !important;
-    border-color: var(--wp--custom--color--secondary) !important;
+    background-color: var(--wp--custom--color--secondary);
+    border-color: var(--wp--custom--color--secondary);
     color: var(--wp--preset--color--off-white);
 }
 .mayuki-nav .wp-block-navigation ul {
@@ -77,6 +77,7 @@
     white-space: nowrap;
 }
 
+/* Search bar */
 .mayuki-nav .wp-block-search {
     grid-area: search;
     padding: 0 0.75rem 0 0;

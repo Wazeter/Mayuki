@@ -1,0 +1,4 @@
+/* Make sure that full width blocks are full width, reset the browser margins. */
+body {
+    overflow-x: hidden;
+}
