@@ -14,8 +14,8 @@
  */
 
 $content = '
-					<!-- wp:group {"align":"full","className":"mayuki-nav-grid-wrapper"} -->
-						<div class="wp-block-group alignfull mayuki-nav-grid-wrapper">
+					<!-- wp:group {"align":"full","className":"mayuki-nav"} -->
+						<div class="wp-block-group alignfull mayuki-nav">
 							<!-- wp:site-logo {"width":120} /-->
 							<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center"} /-->
 							<!-- wp:navigation {"itemsJustification":"right","align":"wide"} -->
