@@ -16,9 +16,10 @@
     display: grid;
     align-items: center;
     padding: 0 2rem;
+    width: 100vw;
     gap: 0.5rem;
-    grid-template-columns: min-content auto max-content;
-    grid-template-areas: "logo search menu";
+    grid-template-columns: min-content clamp(20vw, 50vw, max-content) clamp(20vw, 30vw, 40vw);
+    grid-template-areas: "logo menu search";
     font-family: var(--wp--custom--fonts--heading);
     background: var(--wp--custom--color--primary);
     color: var(--wp--preset--color--white);
@@ -69,8 +70,8 @@
 .mayuki-nav .wp-block-search {
     grid-area: search;
     place-self: center;
+    width: 80%;
     justify-self: center;
-    width: clamp(10rem, 45vw, 75vw);
     padding: 0 2rem;
 }
 

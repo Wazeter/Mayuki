@@ -34,8 +34,8 @@
 	  "palette": [
 		{
 		  "color": "hsl(194, 60%, 53%)",
-		  "slug": "mayuki-teal",
-		  "name": "Mayuki Teal"
+		  "slug": "brand-primary",
+		  "name": "Brand Primary Color"
 		},
 		{
 		  "color": "var(--wp--custom--color--primary-shade-1)",
@@ -64,8 +64,8 @@
 		},
 		{
 		  "color": "hsl(355, 59%, 39%)",
-		  "slug": "mayuki-crimson",
-		  "name": "Mayuki Crimson"
+		  "slug": "brand-secondary",
+		  "name": "Brand Secondary Color"
 		},
 		{
 		  "color": "var(--wp--custom--color--secondary-shade-1)",
