@@ -49,20 +49,19 @@
 
 .mayuki-nav .wp-block-navigation-item {
     padding: 0 0.5rem;
-    font-size: clamp(var(--wp--preset--font-size--small), var(--wp--preset--font-size--normal), var(--wp--preset--font-size--medium));
 }
 
 .mayuki-nav .wp-block-navigation-item:hover {
-    background-color: var(--wp--custom--color--secondary);
-    color: var(--wp--preset--color--off-white);
+    background-color: var(--wp--custom--color--primary-shade-4);
+    color: var(--wp--preset--color--primary);
     height: 4.375rem;
 }
 
 /* Current menu icon */
 .mayuki-nav .current-menu-item {
-    background-color: var(--wp--custom--color--secondary);
-    border-color: var(--wp--custom--color--secondary);
-    color: var(--wp--preset--color--off-white);
+    background-color: var(--wp--custom--color--primary-shade-3);
+    border-color: var(--wp--custom--color--primary-shade-3);
+    color: var(--wp--preset--color--primary);
     height: 4.375rem;
 }
 
