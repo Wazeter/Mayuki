@@ -1,4 +1,17 @@
-/* Make sure that full width blocks are full width, reset the browser margins. */
+/* Global set box-sizing to border-box */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Make sure that full width blocks are full width, reset the browser margins. Might need to add html to overflow-x. */
 body {
     overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+/* images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
 }
