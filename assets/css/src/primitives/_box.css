@@ -1,0 +1,26 @@
+/*
+Component primitive that handles box-shaped objects.
+ */
+
+.box-primitive {
+    --color-light: var(--wp--preset--color--off-white);
+    --color-dark: var(--wp--preset--color--off-black);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    padding: var(--wp--custom--s1);
+    /* outline created to define box, but made transparent this is for high contrast mode */
+    outline: var(--wp--custom--border-tiny) solid transparent;
+    outline-offset: calc(var(--wp--custom--border-tiny) * -1);
+}
+
+/*
+    Color inheritance is forced so that background color & text color can be changed in one spot by default.
+ */
+.box-primitive * {
+    color: inherit;
+}
+
+.box-primitive.invert {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}

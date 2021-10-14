@@ -1,0 +1,17 @@
+/**
+Edits for the group block.
+ */
+
+.wp-block-group {
+    /* outline defines the box itself, using a transparent one enables high contrast mode to maintain box */
+    outline: var(--wp--custom--border--tiny) solid transparent;
+    outline-offset: calc(var(--wp--custom--border--tiny) * -1);
+}
+
+/*
+Force color inheritance by default on the group block / box, so we can change in one spot.
+ */
+
+.wp-block-group * {
+    color: inherit;
+}

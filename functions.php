@@ -70,7 +70,8 @@ add_action( 'wp_enqueue_scripts', 'mayuki_styles' );
  */
 function mayuki_enqueue_block_styles() {
 	// An array of blocks.
-	$styled_blocks = [ 'paragraph', 'code', 'cover', 'group' ];
+	// sample entry for styled_blocks: 'paragraph', 'code', 'cover', 'group'
+	$styled_blocks = [ 'group' ];
 
 	foreach ( $styled_blocks as $block_name ) {
 		// Get the stylesheet handle. This is backwards-compatible and checks the
