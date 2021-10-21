@@ -1,5 +1,8 @@
 <?php
 
+// load block-styles only when used - 07/01/2021, might not need
+add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+
 /**
  * Enqueue the style.css file.
  *
@@ -61,9 +64,6 @@ function mayuki_enqueue_block_styles() {
 		}
 	}
 }
-
-// load block-styles only when used - 07/01/2021, might not need
-add_filter( 'should_load_separate_core_block_assets', '__return_true' );
 
 // Add frontend styles.
 add_action( 'wp_enqueue_scripts', 'mayuki_enqueue_block_styles' );

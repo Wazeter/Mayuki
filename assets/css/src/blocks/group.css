@@ -34,7 +34,7 @@
  *  Group Row/Column Switcher Variation CSS.
  *  @since 1.0.0
  */
-.wp-block-group.is-style-group-switcher {
+.wp-block-group.is-style-row-switcher {
     --threshold: var(--wp--custom--layout--default);
     flex-wrap: wrap;
     margin-left: auto;
@@ -42,18 +42,19 @@
     align-items: center;
 }
 
-.wp-block-group.is-style-group-switcher > * {
+.wp-block-group.is-style-row-switcher > * {
     flex-grow: 1;
     flex-basis: calc((var(--threshold) - 100%) * 999);
 }
 
-.wp-block-group.alignwide.is-style-group-switcher > * {
+.wp-block-group.alignwide.is-style-row-switcher > * {
     --threshold: var(--wp--custom--layout--wide);
 }
-/*
-.wp-block-group.is-style-group-switcher > :nth-last-child(n+5),
-.wp-block-group.is-style-group-switcher > :nth-last-child(n+5) ~ * {
-    flex-basis: 100%;
-}
 
+/**
+ *  Group Column Stack Variation CSS
  */
+.wp-block-group.is-style-column-stack {
+    flex-direction: column;
+    justify-content: flex-start;
+}

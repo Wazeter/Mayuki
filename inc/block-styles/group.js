@@ -1,8 +1,8 @@
 wp.domReady( () => {
 	wp.blocks.registerBlockVariation(
 		'core/group', {
-			name: 'group-switcher',
-			title: __( 'Column/Row Switcher' ),
+			name: 'row-switcher',
+			title: 'Row Switcher',
 			category: 'design',
 			scope: [ 'block', 'inserter', 'transform' ],
 			keywords: [ 'row', 'columns', 'group' ],
@@ -10,10 +10,23 @@ wp.domReady( () => {
 				layout: {
 					type: 'flex'
 				},
-				className: 'is-style-group-switcher',
+				className: 'is-style-row-switcher',
 			},
-			isActive: ( blockAttributes ) =>
-				blockAttributes.layout?.type === 'flex',
 		},
-	)
+	);
+	wp.blocks.registerBlockVariation(
+		'core/group', {
+			name: 'column-stack',
+			title: 'Column Stack',
+			category: 'design',
+			scope: [ 'block', 'inserter', 'transform' ],
+			keywords: [ 'row', 'columns', 'group' ],
+			attributes: {
+				layout: {
+					type: 'flex'
+				},
+				className: 'is-style-column-stack',
+			},
+		},
+	);
 } );

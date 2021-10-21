@@ -94,62 +94,62 @@
 		"color": {
 			"palette": [
 				{
-				  "color": "hsl(194, 60%, 53%)",
+				  "color": "hsl(173, 63%, 78%)",
 				  "slug": "brand-primary",
 				  "name": "Brand Primary Color"
 				},
 			  	{
-				  "color": "hsl(194, 60%, 93%)",
+				  "color": "hsl(173, 63%, 98%)",
 				  "slug": "brand-primary-tint-lighter",
 				  "name": "Brand Primary Tint Lighter"
 				},
 				{
-				  "color": "hsl(194, 60%, 73%)",
+				  "color": "hsl(173, 63%, 88%)",
 				  "slug": "brand-primary-tint",
 				  "name": "Brand Primary Tint"
 				},
 				{
-				  "color": "hsl(194, 60%, 43%)",
+				  "color": "hsl(179, 45%, 46%)",
 				  "slug": "brand-primary-shade",
 				  "name": "Brand Primary Shade"
 				},
 				{
-				  "color": "hsl(194, 60%, 33%)",
+				  "color": "hsl(183, 72%, 22%)",
 				  "slug": "brand-primary-shade-darker",
 				  "name": "Brand Primary Shade Darker"
 				},
 				{
-				  "color": "hsl(194, 120%, 53%)",
+				  "color": "hsl(176, 100%, 77%)",
 				  "slug": "brand-primary-neon",
 				  "name": "Brand Primary Neon"
 				},
 				{
-				  "color": "hsl(355, 59%, 39%)",
+				  "color": "hsl(354, 40%, 52%)",
 				  "slug": "brand-secondary",
 				  "name": "Brand Secondary Color"
 				},
 				{
-				  "color": "hsl(355, 59%, 59%)",
+				  "color": "hsl(354, 40%, 92%)",
 				  "slug": "brand-secondary-tint-lighter",
 				  "name": "Brand Secondary Tint Lighter"
 				},
 				{
-				  "color": "hsl(355, 59%, 79%)",
+				  "color": "hsl(354, 40%, 72%)",
 				  "slug": "brand-secondary-tint",
 				  "name": "Brand Secondary Tint"
 				},
 				{
-				  "color": "hsl(355, 59%, 29%)",
+				  "color": "hsl(354, 40%, 42%)",
 				  "slug": "brand-secondary-shade",
 				  "name": "Brand Secondary Shade"
 				},
 				{
-				  "color": "hsl(355, 59%, 19%)",
+				  "color": "hsl(354, 40%, 32%)",
 				  "slug": "brand-secondary-shade-darker",
 				  "name": "Brand Secondary Shade Darker"
 				},
 				{
-				  "color": "hsl(355, 118%, 39%)",
+				  "color": "hsl(355, 100%, 60%)",
 				  "slug": "brand-secondary-neon",
 				  "name": "Brand Secondary Neon"
 				},
