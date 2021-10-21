@@ -11,4 +11,3 @@
 # Base does a very basic browser reset and sets some smart defaults.
 --------------------------------------------------------------*/
 @import "_base.css";
-@import "template-parts/_navigation.css";

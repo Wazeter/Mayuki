@@ -1,0 +1,10 @@
+/* Synchronize editor styles */
+
+@import "_base.css";
+@import "blocks/button.css";
+@import "blocks/buttons.css";
+@import "blocks/columns.css";
+@import "blocks/group.css";
+@import "blocks/heading.css";
+@import "blocks/paragraph.css";
+@import "blocks/preformatted.css";

@@ -1,0 +1,27 @@
+/**
+ *  In theme.json we specify p tags as having padding set to
+ *  theme padding value. Matching it with has-background.
+ *  Setting this to keep spacing consistent if user uses
+ *  group or no group as wrapper for text.
+ *
+ *  With .has-background modifier, it implies acting like a
+ *  "box" similar to .wp-group-block and inside .wp-group-block
+ *  is a "box" within a "box"
+ *
+ *  Max width set to CH based custom measure to ensure
+ *  easy readability and does not extend beyond the 45-75 ch
+ *  range.
+ *
+ *  when an element has .has-background it acts
+ *  like a "box" and should have a box shape maintained.
+ *  Accessibility refinement.
+ */
+p {
+    padding: 0 var(--wp--custom--spacing--default);
+}
+
+p.has-background {
+    padding: var(--wp--custom--spacing--default);
+    outline: var(--wp--custom--border--tiny) solid transparent;
+    outline-offset: calc(var(--wp--custom--border--tiny) * -1);
+}

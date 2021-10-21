@@ -34,6 +34,9 @@ endif;
 /* load block-styles only when used - 07/01/2021, might not need */
 add_filter( 'should_load_separate_core_block_assets', '__return_true' );
 
+// Block styles.
+require_once 'inc/block-styles/index.php';
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
@@ -66,12 +69,28 @@ function mayuki_styles() {
 add_action( 'wp_enqueue_scripts', 'mayuki_styles' );
 
 /**
+ * Enqueue editor styles.
+ *
+ * @since 1.0.0
+ */
+function mayuki_editor_styles() {
+	wp_enqueue_style(
+		'mayuki-editor',
+		get_theme_file_uri( 'assets/css/build/editor.css' ),
+		'',
+		MAYUKI_VERSION
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'mayuki_editor_styles' );
+
+/**
  * Attach extra styles to multiple blocks.
  */
 function mayuki_enqueue_block_styles() {
 	// An array of blocks.
 	// sample entry for styled_blocks: 'paragraph', 'code', 'cover', 'group'
-	$styled_blocks = [ 'group' ];
+	// 'group', 'paragraph', 'heading', 'code', 'preformatted', 'list'
+	$styled_blocks = [ 'group', 'columns', 'buttons', 'button', 'heading', 'preformatted', 'paragraph' ];
 
 	foreach ( $styled_blocks as $block_name ) {
 		// Get the stylesheet handle. This is backwards-compatible and checks the
