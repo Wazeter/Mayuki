@@ -7,9 +7,6 @@ wp.domReady( () => {
 			scope: [ 'block', 'inserter', 'transform' ],
 			keywords: [ 'row', 'columns', 'group' ],
 			attributes: {
-				layout: {
-					type: 'flex'
-				},
 				className: 'is-style-row-switcher',
 			},
 		},

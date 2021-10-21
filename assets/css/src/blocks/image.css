@@ -7,7 +7,13 @@
     padding-bottom: calc(9 / 16 * 100%);
 }
 
+.wp-block-image.is-mayuki-card-image,
+.wp-block-image.is-mayuki-card-image.has-background {
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
 /* Fixes odd extra pixel from .has-background parent container */
+.wp-block-image.is-mayuki-card-image,
 .has-background > .is-mayuki-card-image {
     margin: -1px;
 }
