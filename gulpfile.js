@@ -20,5 +20,20 @@ gulp.task('css', function() {
 	];
 	return gulp.src('./assets/css/src/*.css')
 		.pipe(postcss(processors))
-		.pipe(gulp.dest('./assets/css'))
+		.pipe(gulp.dest('./assets/css/build'))
+});
+
+gulp.task('blocks', function() {
+
+
+	var processors = [
+		cssnano,
+		calc,
+		cssImport,
+		partialImport,
+		reporter
+	];
+	return gulp.src('./assets/css/src/blocks/*.css')
+		.pipe(postcss(processors))
+		.pipe(gulp.dest('./assets/css/build'))
 });

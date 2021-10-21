@@ -1,0 +1,1 @@
+h1,h2,h3,h4,h5,h6{padding:0 var(--wp--custom--spacing--default)}h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{outline:var(--wp--custom--border--tiny) solid transparent;outline-offset:calc(var(--wp--custom--border--tiny)*-1);padding:var(--wp--custom--spacing--default)}

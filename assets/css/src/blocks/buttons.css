@@ -1,0 +1,11 @@
+/*.wp-block-buttons > * > * {
+    display: block;
+    flex-grow: 1;
+    flex-basis: calc((var(--wp--custom--threshold) - (100% - var(--wp--custom--base))) * 999);
+} */
+
+/* Vertical stacking */
+.wp-block-buttons > .wp-block-button {
+    margin-top: var(--wp--custom--spacing--thin);
+    margin-bottom: 0;
+}

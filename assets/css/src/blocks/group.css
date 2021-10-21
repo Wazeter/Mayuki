@@ -1,0 +1,118 @@
+/**
+ *  Group blocks combine blocks into "groups"
+ *  meaning there will always be multiple blocks.
+ *  Treating it as a "box" to control margin / spacing
+ */
+.wp-block-group {
+    padding: var(--wp--custom--spacing--default);
+    outline: var(--wp--custom--border--tiny) solid transparent;
+    outline-offset: calc(var(--wp--custom--border--tiny) * -1 );
+    color: inherit;
+}
+
+/**
+ *  .has-background makes elements act more like
+ *  visual "boxes" and we'd prefer them to go full width.
+ *  This adjusts spacing on first and last elements to make
+ *  their spacing in alignment and full width with the group.
+ */
+.wp-block-group [class*="has-background"]:first-child,
+.wp-block-group [class*="has-background"]:last-child {
+    margin: calc(var(--wp--custom--spacing--default) * -1 );
+    padding: var(--wp--custom--spacing--default) calc(var(--wp--custom--spacing--default) * 2 );
+}
+
+.wp-block-group [class*="has-background"]:first-child {
+    margin-bottom: 0;
+}
+
+.wp-block-group [class*="has-background"]:last-child {
+    margin-top: var(--wp--custom--spacing--default);
+}
+
+/**
+ *  Group Row Switcher Variation CSS.
+ *  Allows for as many items to responsively
+ *  change without media queries.
+ *  @since 1.0.0
+ */
+.wp-block-group.is-style-row-switcher {
+    --threshold: var(--wp--custom--layout--default);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    justify-content: center;
+
+}
+
+.wp-block-group.is-style-row-switcher [class*="has-background"]:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wp-block-group.is-style-row-switcher > * {
+
+}
+
+.wp-block-group.alignwide.is-style-row-switcher > * {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+}
+
+.wp-block-group.is-style-row-switcher > :nth-last-child(n+4),
+.wp-block-group.is-style-row-switcher > :nth-last-child(n+4) ~ * {
+
+}
+
+/**
+ *  Group Column Stack Variation CSS. Stacks
+ *  columns appropriately & responsively
+ *  without media queries.
+ */
+.wp-block-group.is-style-column-stack,
+.wp-block-group.is-style-column-stack.has-background {
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/**
+ *  Basic card block pattern CSS
+ */
+.wp-block-group.is-mayuki-card,
+.wp-block-group.is-mayuki-card.has-background {
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-color: var(--wp--preset--color--off-black);
+    box-shadow: var(--wp--preset--color--brand-primary)
+                calc(var(--wp--custom--spacing--default) * 0.25)
+                calc(var(--wp--custom--spacing--default) * 0.25) 0 0;
+}
+
+.wp-block-group.is-mayuki-card:focus,
+.wp-block-group.is-mayuki-card:hover,
+.wp-block-group.is-mayuki-card.has-background:focus,
+.wp-block-group.is-mayuki-card.has-background:hover {
+    color: var(--wp--preset--color--off-black) !important;
+    background-color: var(--wp--preset--color--silver) !important;
+    box-shadow: var(--wp--preset--color--brand-secondary)
+                calc(var(--wp--custom--spacing--default) * 0.25)
+                calc(var(--wp--custom--spacing--default) * 0.25) 0 0;
+}
+
+/**
+ *  Fixes margin of last child to be consistent
+ *  with the rest of the spacing.
+ */
+.wp-block-group.is-mayuki-card > :last-child {
+    margin-bottom: calc(var(--wp--custom--spacing--default) * 2);
+}
+
+/**
+ *  Aligns Header to the left.
+ */
+.wp-block-group.is-mayuki-card > h3 {
+    align-self: flex-start;
+}

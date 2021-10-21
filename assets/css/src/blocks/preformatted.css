@@ -1,0 +1,14 @@
+/**
+ * Preformatted Block CSS, universalizing padding
+ * add "box" like behavior on .has-background
+ * ref 'paragraph.css'
+ */
+.wp-block-preformatted {
+    padding: 0 var(--wp--custom--spacing--default);
+}
+
+.wp-block-preformatted.has-background {
+    padding: var(--wp--custom--spacing--default);
+    outline: var(--wp--custom--border--tiny) solid transparent;
+    outline-offset: calc(var(--wp--custom--border--tiny) * -1);
+}
