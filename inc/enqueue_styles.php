@@ -40,7 +40,10 @@ function mayuki_enqueue_block_styles() {
 	// An array of blocks.
 	// sample entry for styled_blocks: 'paragraph', 'code', 'cover', 'group'
 	// 'group', 'paragraph', 'heading', 'code', 'preformatted', 'list'
-	$styled_blocks = [ 'group', 'columns', 'buttons', 'button', 'heading', 'preformatted', 'paragraph' ];
+	$styled_blocks = [  'group', 'columns', 'buttons',
+						'button', 'heading', 'preformatted',
+						'paragraph', 'image',
+	];
 
 	foreach ( $styled_blocks as $block_name ) {
 		// Get the stylesheet handle. This is backwards-compatible and checks the

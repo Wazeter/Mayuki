@@ -1,0 +1,38 @@
+/**
+ * Adjusts image for card pattern to maintain 16:9
+ * aspect ratio.
+ */
+.wp-block-image .is-mayuki-card-image {
+    position: relative;
+    padding-bottom: calc(9 / 16 * 100%);
+}
+
+/* Fixes odd extra pixel from .has-background parent container */
+.has-background > .is-mayuki-card-image {
+    margin: -1px;
+}
+
+/**
+ * Makes <figure> image wrapper position
+ * correctly for responsive aspect ratio.
+ */
+.wp-block-image .is-mayuki-card-image > * {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**
+ *  Stretches image to cover area.
+ */
+.wp-block-image .is-mayuki-card-image > img {
+    object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+}
